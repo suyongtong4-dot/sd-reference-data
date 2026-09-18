@@ -1,0 +1,5 @@
+﻿sampler,convergence,cost_per_step,notes
+PLMS,Worst observed,,Converged worst in testing out to 40 steps against an Euler baseline
+LMS Karras,Slightly better than PLMS,,
+Second-order solvers,,~2x,"Evaluate the U-Net twice per step, so cost roughly doubles"
+DPM adaptive,Best of all,Slowest of all,"Converges best, runs slowest"
