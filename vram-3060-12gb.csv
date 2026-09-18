@@ -1,0 +1,4 @@
+﻿resolution,batch_size,hires_fix,upscaler,predicted_vram_pct,result,notes
+768x512,4,no,none,46.09,completes,
+768x512,4,yes,4x-UltraSharp,">100",fails,Exceeded available VRAM and the render died
+768x512,4,yes,unknown,75.90,completes,"Changing only the upscaler brought it back under budget. The specific replacement upscaler was not recorded"
