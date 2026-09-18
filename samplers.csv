@@ -1,0 +1,6 @@
+﻿use_case,recommended_samplers,steps,notes
+Simple results,"Euler; Heun",,"Heun tolerates fewer steps, which saves time"
+Speed and variety,"DPM++ 2M Karras; UniPC","20-30",
+Quality (convergence sacrificed),"DPM++ SDE Karras; DDIM","8-12 for DPM++ SDE Karras; 10-15 for DDIM",
+Reproducible output,"Avoid ancestral samplers: Euler a; DPM2 a; DPM++ 2S a; DPM++ 2S a Karras",,"Ancestral samplers add noise at every step and never settle. Fine for one-offs, wrong for anything you need to regenerate identically"
+Fallback when a checkpoint looks wrong,"DPM++ family","20-25","First thing worth trying if a checkpoint looks wrong on Euler"
